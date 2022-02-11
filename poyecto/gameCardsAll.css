@@ -39,7 +39,7 @@ body{
 }
   
 .topnav a:hover {
-    background-color: rgba(228, 192, 219, 0.781);
+    background-color: rgba(219, 205, 75, 0.781);
     color: black;
 }
   
@@ -84,13 +84,21 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px;
-    background-color: rgba(228, 192, 219, 0.781);
+    background-color: rgba(219, 205, 75, 0.781);
 }
 
 #mainLinkGames{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(228, 192, 219, 0.781);
+    
+    margin: 20px;
+}
+
+.linkGamesCards{
+    margin: 20px;
+    padding: 50px;
+    background-color: rgba(219, 205, 75, 0.781);
+    
 }
 
 footer{
