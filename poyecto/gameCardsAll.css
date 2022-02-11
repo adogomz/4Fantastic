@@ -48,11 +48,6 @@ body{
     color: white;
 }
 
-.imgHeader{
-    border: 5px rgb(162, 224, 146) solid;
-    border-radius: 10%;
-}
-
 /* css menu desktop */
 
 .headerAll{
@@ -83,6 +78,18 @@ body{
     margin: 10px;
     padding: 5px 20px;
     border-radius: 5px;
+}
+
+#tittleHome{
+    display: flex;
+    align-content: center;
+    background-color: rgba(228, 192, 219, 0.781);
+}
+
+#mainLinkGames{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(228, 192, 219, 0.781);
 }
 
 footer{
