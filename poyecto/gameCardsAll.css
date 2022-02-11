@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: rgb(255, 220, 207);
+    font-size: 16px;
+}
+
+/* css menú burguer */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(219, 205, 75);
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.topnav a.icon {
+    background: rgb(155, 66, 131);
+    display: block;  
+    position: absolute;
+    right: 20px;
+    top: 16px;	
+    font-size: 2.5em;
+}
+  
+.topnav a:hover {
+    background-color: rgba(228, 192, 219, 0.781);
+    color: black;
+}
+  
+.active {
+    background-color: rgb(155, 66, 131);
+    color: white;
+}
+
+.imgHeader{
+    border: 5px rgb(162, 224, 146) solid;
+    border-radius: 10%;
+}
+
+/* css menu desktop */
+
+.headerAll{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background: rgb(155, 66, 131);
+}
+
+.headerLeft{
+    padding-left: 15px;
+}
+
+.imageheaderLeft{
+    height: 87.84px;
+    border-radius: 5px; 
+}
+
+.headerRight{
+    display: flex;
+    align-content: space-around;
+    margin: 20px 60px;  
+}
+
+.buttonHeader{
+    background-color: rgb(219, 205, 75);
+    color: black;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+footer{
+    border-top: 2px rgb(124, 104, 60) solid;
+    padding: 10px;
+    min-height: 100px;
+    background-color: rgb(224, 182, 213); 
+}
+
+@media (max-width: 739.99px) {
+    .headerAll{
+        display: none;
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 999.99px) {
+
+    .topnav{
+        display: none; 
+    }
+ 
+}
+
+@media (min-width: 1000px)  {
+ 
+    .topnav{
+        display: none; 
+    }
+ 
+}
+
