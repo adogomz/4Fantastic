@@ -118,3 +118,9 @@ footer {
     display: none;
   }
 }
+
+/* Estilo para las cartas  */
+
+#cartas {
+  display: flex;
+}
