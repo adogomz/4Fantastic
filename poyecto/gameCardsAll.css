@@ -30,7 +30,7 @@ body{
 }
   
 .topnav a.icon {
-    background: rgb(155, 66, 131);
+    background: rgb(155, 66, 100);
     display: block;  
     position: absolute;
     right: 20px;
@@ -44,7 +44,7 @@ body{
 }
   
 .active {
-    background-color: rgb(155, 66, 131);
+    background-color: rgb(155, 66, 100);
     color: white;
 }
 
@@ -54,7 +54,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px 10px;
-    background: rgb(155, 66, 131);
+    background: rgb(155, 66, 100);
 }
 
 .headerLeft{
@@ -82,7 +82,8 @@ body{
 
 #tittleHome{
     display: flex;
-    align-content: center;
+    justify-content: center;
+    margin: 20px;
     background-color: rgba(228, 192, 219, 0.781);
 }
 
