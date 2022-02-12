@@ -1,5 +1,5 @@
 
- /* CONSTANTE PARA LA API SOLO SACA 10 PERSONAJES CREO QUE ERAN */
+ /* CONSTANTE PARA LA API SOLO SACA 10 PERSONAJES CREO QUE ERAN estos*/
 const API_PERS = "https://rickandmortyapi.com/api/character/";
 let cardsList;
 let keyCardsList;
