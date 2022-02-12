@@ -5,14 +5,15 @@ let cardsList;
 let keyCardsList;
 let numRandom = [];
 
+//funcion para sacar el click
 function addImageCard() {
   keyId = this.id;
-  keyIdCard = keyId + "-img"
+  keyIdCard = keyId + "-img";
   document.getElementById(keyId).classList.add('hidden');
   document.getElementById(keyIdCard).classList.add('show');
 }
 
-//sacada de internet la siguiente funcion
+//sacada de internet la siguiente funcion. Sirve para sacar que no se repitan los numeros random
 function getRandomNumber(min, max) {
   let totalEle = max - min + 1;
   let result = Math.floor(Math.random() * totalEle) + min;
@@ -37,7 +38,7 @@ fetch(API_PERS)
 .then(function sacarCartas(response) {
   cardsList = response.results;
   Object.keys(cardsList).forEach(key => {
-    keyCardsList = key
+    keyCardsList = key;
   });   
   let x;
   for (let i = 0; i < 8; i++) {
@@ -49,18 +50,24 @@ fetch(API_PERS)
     numbersArray.splice(randomIndex, 1);
   }
 
+
+
   let shuffledArray = numRandom.sort((a, b) => 0.5 - Math.random());
-  console.log(shuffledArray)
+
 
   let j = 0;
   shuffledArray.forEach(element => {
     j++;
-    document.querySelector("#cartas").innerHTML += `<div id="${j}" class="listen formatCards imageCards${j}"><img src="../poyecto/image/card-blue.png" alt="carta azul"></div><div id="${j}-img" class="imageCardsAPI"><img src="${cardsList[element].image}" alt="${cardsList[element].name}"/></div>`
+    document.querySelector("#cartas").innerHTML += `<div id="${j}" class="listen imageCards${j}"><img src="../poyecto/image/card-blue.png" alt="carta azul"></div><div id="${j}-img" class="imageCardsAPI"><img src="${cardsList[element].image}" alt="${cardsList[element].name}"/></div>`;
+
   });
 
+  //para el click
   let elements = document.getElementsByClassName("listen");
 
   Array.from(elements).forEach(function(element) {
     element.addEventListener('click', addImageCard);
   });
+
+  
 });
