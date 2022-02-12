@@ -94,6 +94,39 @@ body {
   background-color: rgba(228, 192, 219, 0.781);
 }
 
+#cartas {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 100px;
+ 
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.formatsCards {
+  margin: 10px;
+  width: 18%;
+}
+
+.imageCardsAPI {
+  width: 120px;
+  height: 120px;
+  display: none;
+}
+
+.imageCardsAPI img{
+  width: 120px;
+  height: 120px;
+}
+
 footer {
   border-top: 2px rgb(124, 104, 60) solid;
   padding: 10px;

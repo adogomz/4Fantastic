@@ -1,0 +1,44 @@
+/* ANIMACIONES */
+
+@keyframes repartir {
+  0% {
+    transform: translate(-1000px, -150px) rotate(0deg);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  80% {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  /* 100% {
+    transform: translate(0, 0);
+  } */
+}
+
+.card {
+    animation-name: repartir;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-fill-mode: backwards;
+}
+
+
+.card:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.card:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+.card:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+
+
