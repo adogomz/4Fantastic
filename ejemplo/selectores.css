@@ -1,0 +1,201 @@
+/* SELECTORES BÁSICOS */
+
+/* 1. Selector de tipo */
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+p {
+  
+}
+
+/* 2. Selector de ID */
+
+#deck {
+  background-color: green;
+  padding: 20px;
+}
+
+/* 3. Selector de clase */
+
+.card {
+  background-color: white;
+  /* width: 100px; */
+  /* height: 150px; */
+  width: 150px;
+  border-radius: 8px;
+}
+
+  .card__number {
+    
+  }
+
+  .card__suit {
+
+  }
+
+.suit {
+
+}
+
+/* 4. Selector de atributo */
+
+[data-type="spades"],
+[data-type="clubs"] {
+  color: black;
+}
+
+[data-type="hearts"],
+[data-type="diamonds"] {
+  color: red;
+}
+
+/* 5. Selector universal */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* SELECTORES AVANZADOS */
+
+/* 1. Combinador de descendientes */
+
+.suit .card {
+  display: inline-block;
+  /* margin-left: 20px; */
+}
+
+/* 2. Combinador de hermanos adyacentes */
+
+/* .suit p + .card {
+  margin-left: 0;
+} */
+
+/* 3. Combinador general de hermanos */
+
+.card ~ .card {
+  margin-left: 20px;
+}
+
+/* 4. Combinador de hijos */
+
+
+
+/* PSEUDO-CLASES */
+
+.card:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:first-of-type {
+  margin-left: 0;
+}
+
+
+/* PSEUDO-ELEMENTOS */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  display: block;
+  margin-top: 141.93548%; /* 62 x 88 mm */
+}
+
+/* position: absolute;
+top: 0;
+left: 0; */
+
+.card__suit::before,
+.card__suit::after,
+.card__number::before,
+.card__number::after {
+  position: absolute;
+}
+
+.card__suit::before{
+  top: 30px;
+  left: 10px;
+}
+
+.card__number::before {
+  top: 10px;
+  left: 10px;
+}
+
+.card__suit::after {
+  bottom: 30px;
+  right: 10px;
+}
+
+.card__number::after {
+  bottom: 10px;
+  right: 10px;
+}
+
+[data-type="spades"] .card__suit::before,
+[data-type="spades"] .card__suit::after {
+  content: '♠';
+}
+
+[data-type="clubs"] .card__suit::before,
+[data-type="clubs"] .card__suit::after {
+  content: '♣';
+}
+
+[data-type="hearts"] .card__suit::before,
+[data-type="hearts"] .card__suit::after {
+  content: '♥';
+}
+
+[data-type="diamonds"] .card__suit::before,
+[data-type="diamonds"] .card__suit::after {
+  content: '♦';
+}
+
+
+[data-number="A"] .card__number::before,
+[data-number="A"] .card__number::after {
+  content: 'A';
+}
+
+[data-number="J"] .card__number::before,
+[data-number="J"] .card__number::after {
+  content: 'J';
+}
+
+[data-number="Q"] .card__number::before,
+[data-number="Q"] .card__number::after {
+  content: 'Q';
+}
+
+[data-number="K"] .card__number::before,
+[data-number="K"] .card__number::after {
+  content: 'K';
+}
+
+
+

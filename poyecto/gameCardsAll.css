@@ -94,6 +94,42 @@ body {
   background-color: rgba(228, 192, 219, 0.781);
 }
 
+#cartas {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4,1fr);
+  padding: 30px 60px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/* .formatsCards {
+  margin: 10px;
+  width: 25%;
+} */
+
+.listen img{
+  width: 150px;
+  height: 170px;
+  margin: 10px;
+}
+
+.imageCardsAPI {
+  display: none;
+}
+
+.imageCardsAPI img{
+  width: 150px;
+  height: 170px;
+  margin: 10px;
+}
+
 footer {
   border-top: 2px rgb(124, 104, 60) solid;
   padding: 10px;
@@ -105,22 +141,24 @@ footer {
   .headerAll {
     display: none;
   }
+
+  .imageCardsAPI img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .listen img{
+    width: 100px;
+    height: 120px;
+    margin: 10px;
+  }
 }
 
-@media (min-width: 740px) and (max-width: 999.99px) {
+@media (min-width: 740px) {
   .topnav {
     display: none;
   }
 }
 
-@media (min-width: 1000px) {
-  .topnav {
-    display: none;
-  }
-}
 
-/* Estilo para las cartas  */
-
-#cartas {
-  display: flex;
-}

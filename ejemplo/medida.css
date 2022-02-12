@@ -1,0 +1,83 @@
+/* UNIDADES DE MEDIDA */
+
+html {
+  font: .625em/1.231 sans-serif;
+}
+
+/* 1. Unidades Absolutas */
+
+/* .card__number {
+  font-size: 24px;
+} */
+
+/* .card__suit {
+  font-size: 20px;
+} */
+
+.card {
+  font-size: 2.4rem;
+}
+
+.card__number:before,
+.card__number:after,
+.card__suit:before,
+.card__suit:after {
+  /* width: 24px; */
+  text-align: center;;
+}
+
+
+/* 2. Unidades Relativas */
+
+p {
+  font-size: 1.6rem;
+}
+
+
+.card__number {
+  font-size: 1em;
+}
+
+.card__number:before,
+.card__number:after,
+.card__suit:before,
+.card__suit:after {
+  width: 1em;
+}
+
+  .card__number::before {
+    /* top: 0.5rem;
+    left: 0.5rem; */
+    top: 0.4em;
+    left: 0.4em;
+  }
+
+  .card__number::after {
+    /* bottom: 0.5rem;
+    right: 0.5rem; */
+    bottom: 0.4em;
+    right: 0.4em;
+  }
+
+
+.card__suit {
+  font-size: 1em;
+}
+
+  .card__suit::before{
+    /* top: 2rem;
+    left: 0.5rem; */
+    top: 1.6em;
+    left: 0.4em;
+  }
+
+  .card__suit::after {
+    /* bottom: 2rem;
+    right: 0.5rem; */
+    bottom: 1.6em;
+    right: 0.4em;
+  }
+
+  
+
+
