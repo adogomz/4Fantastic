@@ -50,15 +50,12 @@ fetch(API_PERS)
     numbersArray.splice(randomIndex, 1);
   }
 
-  console.log(numRandom);
-debugger
   let shuffledArray = numRandom.sort((a, b) => 0.5 - Math.random());
-  console.log(shuffledArray);
 
   let j = 0;
   shuffledArray.forEach(element => {
     j++;
-    document.querySelector("#cartas").innerHTML += `<div id="${j}" class="listen imageCards${j}"><img src="../poyecto/image/card-blue.png" alt="carta azul"></div><div id="${j}-img" class="imageCardsAPI"><img src="${cardsList[element].image}" alt="${cardsList[element].name}"/></div>`;
+    document.querySelector("#cartas").innerHTML += `<div id="${j}" class="listen imageCards${j}"><img src="./image/card-blue.png" alt="carta azul"></div><div id="${j}-img" class="imageCardsAPI"><img src="${cardsList[element].image}" alt="${cardsList[element].name}"/></div>`;
 
   });
 
