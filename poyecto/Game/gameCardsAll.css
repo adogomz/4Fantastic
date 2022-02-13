@@ -77,7 +77,7 @@ body {
 .buttonHeader {
   background-color: #4C6165;
   color: rgb(34, 17, 97);
-  margin-bottom : 20px;
+  margin-bottom: 20px;
   width: 70px;
   height: 25px;
   display: flex;
@@ -89,35 +89,44 @@ body {
 }
 /* main */
 
-#tittleHome {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  background-color: rgba(226, 224, 76, 0.781);
-  border-radius: 20px;
-}
 
-#tittleGame {
+#padreButton {
   display: flex;
-  justify-content: center;
-  margin:10px 45% 10px;
+  justify-content: space-around;
   padding: 5px 0px;
   border-radius: 15px;
-  background-color: rgb(255, 255, 255);
 }
 
-.sonTittleGame{
+.tittleHome {
   display: flex;
+  justify-content: center;;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-right: 350px;
+  margin-top: 50px;
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+}
+.tittleGame{
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   text-decoration: none;
   font-size: 25px; 
+  background-color: aliceblue;
+  margin-left: 380px;
+  margin-top: 50px;
+  width: 155px;
+  height: 30px;
 }
 
 .imgBackground{
   background: url("https://www.todofondos.net/wp-content/uploads/wood-wallpaper-wood-background-hd-134649-descargar-fondo-de-pantalla-hd.-imagen-hd-1080p-de-madera.jpg") center/cover;
   margin:30px;
   border-radius: 50px;
-  padding-top: 20px ;
 }
 
 #mainLinkGames {
@@ -201,7 +210,7 @@ border-radius: 10px;
   text-align: center;
   grid-template-columns: repeat(4,1fr);
   padding: 30px 60px;
-  
+  margin: 0px 50px;
 }
 
 .hidden {
