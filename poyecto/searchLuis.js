@@ -8,7 +8,7 @@ let second=false;
 let clickedId;
 let canClick=true;
 
-/* REVISA ESTO
+/* REVISA ESTO luego
   classList.toggle
   HTML dataset
   setTimeout
