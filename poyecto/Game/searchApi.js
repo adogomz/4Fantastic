@@ -1,16 +1,58 @@
-
- /* CONSTANTE PARA LA API SOLO SACA 10 PERSONAJES CREO QUE ERAN */
+/* CONSTANTE PARA LA API SOLO SACA 10 PERSONAJES CREO QUE ERAN */
 const API_PERS = "https://rickandmortyapi.com/api/character/";
 let cardsList;
 let keyCardsList;
 let numRandom = [];
 
+let second=false;
+let clickedId;
+let canClick=true;
+
+/* REVISA ESTO luego
+  classList.toggle
+  HTML dataset
+  setTimeout
+  Chrome devTools breakpoints
+  Pasar por valor o por referencia
+*/
+
+function hideImage(){
+
+}
+
+function toggleImage(id){
+  document.getElementById(id).classList.toggle('hidden');
+  document.getElementById(id+'-img').classList.toggle('show');
+}
+
 //funcion para sacar el click
 function addImageCard() {
-  keyId = this.id;
-  keyIdCard = keyId + "-img";
-  document.getElementById(keyId).classList.add('hidden');
-  document.getElementById(keyIdCard).classList.add('show');
+  if(!canClick)
+    return;
+
+  toggleImage(this.id);
+
+  if(second) {
+    // clickedId
+    // this.id
+    if(
+      document.getElementById(this.id).dataset.characterId
+      !=
+      document.getElementById(clickedId).dataset.characterId
+    ){
+      let previousId=clickedId;
+      canClick=false;
+      setTimeout(()=>{
+        toggleImage(this.id);
+        toggleImage(previousId);
+        canClick=true;
+      },1500)
+    }
+  }
+
+  second =!second;
+  clickedId=this.id;
+
 }
 
 //sacada de internet la siguiente funcion. Sirve para sacar que no se repitan los numeros random
@@ -55,7 +97,13 @@ fetch(API_PERS)
   let j = 0;
   shuffledArray.forEach(element => {
     j++;
-    document.querySelector("#cartas").innerHTML += `<div id="${j}" class="listen imageCards${j}"><img src="./image/card-blue.png" alt="carta azul"></div><div id="${j}-img" class="imageCardsAPI"><img src="${cardsList[element].image}" alt="${cardsList[element].name}"/></div>`;
+    document.querySelector("#cartas").innerHTML +=
+      `<div id="${j}" class="listen imageCards${j}" data-character-id=${cardsList[element].id}>
+        <img src="./image/card-blue.png" alt="carta azul">
+      </div>
+      <div id="${j}-img" class="imageCardsAPI">
+        <img src="${cardsList[element].image}" alt="${cardsList[element].name}"/>
+      </div>`;
 
   });
 
