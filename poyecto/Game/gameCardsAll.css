@@ -94,6 +94,7 @@ body {
   justify-content: center;
   margin: 20px;
   background-color: rgba(226, 224, 76, 0.781);
+  border-radius: 20px;
 }
 
 #tittleGame {
@@ -125,52 +126,44 @@ body {
   background-color: rgba(226, 224, 76, 0.781);
   margin: 20px;
   text-align: center;
+  color: rgb(226, 224, 76);
+  border-radius: 20px;
 }
 
-.linkGamesCards1{
+.linkGamesCards{
   margin: 20px;
 padding: 0px;
 background: rgb(20, 57, 79);
 border-radius: 10px;
 }
 
-.linkGamesCards2{
+.linkGamesCards{
 margin: 20px; 
 padding: 0px;
 background: rgb(20, 57, 79);
 border-radius: 10px;
 }
 
-.linkGamesCards1 a img{
-  margin: 0px 20px 20px 20px;
-  width: 400px;
-  
-  
-  
-}
-.linkGamesCards2 a img{
+.linkGamesCards a img{
   margin: 0px 20px 20px 20px;
   width: 400px;
   height: 290px;
 }
 
-.linkGamesCards1 h2{
-  color: rgba(59, 131, 173, 0.781);
-text-decoration: underline;
-margin: 2px;
+.linkGamesCards p{
+  text-decoration: underline;
+  margin: 2px;
+  font-size: 20px;
 }
 
-.linkGamesCards2 h2{
-  color: rgba(59, 131, 173, 0.781);
-text-decoration: underline;
-margin: 2px;
-}
 .eleccion{
   width: 250px;
   margin-top: 100px;
   text-align: center;
   justify-content: space-around;
+  color: rgb(20, 57, 79);
 }
+
 .eleccion h2{
   margin-bottom: 20px;
   font-family: monospace;
@@ -182,6 +175,24 @@ margin: 2px;
   font-size: 18px;
   width: 240px;
   font-family:monospace;
+}
+
+#mainLinkGamesMobile {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(226, 224, 76, 0.781);
+  margin: 20px;
+  text-align: center;
+  color: rgb(20, 57, 79);
+  border-radius: 20px;
+}
+
+.eleccion{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin-top: 100px;
+  color: rgb(20, 57, 79);
 }
 
 #cartas {
@@ -246,9 +257,6 @@ footer p {
 }
 
 @media (max-width: 739.99px) {
-  .headerAll {
-    display: none;
-  }
 
   .imageCardsAPI img{
     width: 100px;
@@ -261,10 +269,14 @@ footer p {
     height: 120px;
     margin: 10px;
   }
+
+  #mainLinkGames{
+    display: none;
+  }
 }
 
 @media (min-width: 740px) {
-  .topnav {
+  #mainLinkGamesMobile{
     display: none;
   }
 }
