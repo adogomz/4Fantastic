@@ -4,11 +4,12 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/* css menú burguer */
-header{
-  background: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/Rick-and-Morty-Memes.jpg") no-repeat center/cover;
+body {
+  background: rgb(255, 220, 207);
+  font-size: 16px;
 }
 
+/* css menú burguer */
 .topnav {
   overflow: hidden;
   background-color: rgb(219, 205, 75);
@@ -52,8 +53,9 @@ header{
 .headerAll {
   display: flex;
   justify-content: space-between;
-  padding: 15px 15px;
-  background: rgb(155, 66, 100);
+  padding: 80px;
+  background: url("https://p4.wallpaperbetter.com/wallpaper/29/770/557/movie-fantastic-four-2015-wallpaper-preview.jpg")center/cover;
+  box-shadow: 20px 0 24px rgb(0, 0, 0, 0.75);
 }
 
 .headerLeft {
@@ -73,7 +75,7 @@ header{
 }
 
 .buttonHeader {
-  background-color: rgba(228, 192, 219, 0.781);
+  background-color: #4C6165;
   color: rgb(155, 66, 100);
   margin: 25px;
   width: 70px;
@@ -86,7 +88,15 @@ header{
   font-size: 20px;
 }
 /* main */
+
 #tittleHome {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: rgba(228, 192, 219, 0.781);
+}
+
+#tittleGame {
   display: flex;
   justify-content: center;
   margin:10px 45% 10px;
@@ -94,31 +104,84 @@ header{
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
 }
-.sonTittleHome{
+
+.sonTittleGame{
   display: flex;
   border-radius: 20px;
   text-decoration: none;
-  font-size: 25px;
-  
-}
-
-body{
-  background-color:rgb(255, 220, 207);
+  font-size: 25px; 
 }
 
 .imgBackground{
-  
   background: url("https://www.todofondos.net/wp-content/uploads/wood-wallpaper-wood-background-hd-134649-descargar-fondo-de-pantalla-hd.-imagen-hd-1080p-de-madera.jpg") center/cover;
   margin:30px;
   border-radius: 50px;
   padding-top: 20px ;
-
 }
 
 #mainLinkGames {
   display: flex;
   justify-content: space-around;
   background-color: rgba(228, 192, 219, 0.781);
+  margin: 20px;
+  text-align: center;
+}
+
+.linkGamesCards1{
+  margin: 20px;
+padding: 0px;
+background: rgb(155, 66, 100);
+border-radius: 10px;
+}
+
+.linkGamesCards2{
+margin: 20px; 
+padding: 0px;
+background: rgb(155, 66, 100);
+border-radius: 10px;
+}
+
+.linkGamesCards1 a img{
+  margin: 0px 20px 20px 20px;
+  width: 400px;
+  
+  
+  
+}
+.linkGamesCards2 a img{
+  margin: 0px 20px 20px 20px;
+  width: 400px;
+  height: 290px;
+}
+
+.linkGamesCards1 h2{
+  color: rgba(228, 192, 219, 0.781);
+text-decoration: underline;
+margin: 2px;
+}
+
+.linkGamesCards2 h2{
+  color: rgba(228, 192, 219, 0.781);
+text-decoration: underline;
+margin: 2px;
+}
+.eleccion{
+  width: 250px;
+  margin-top: 100px;
+  text-align: center;
+  justify-content: space-around;
+}
+.eleccion h2{
+  margin-bottom: 20px;
+  font-family: monospace;
+  width: 250px;
+  
+}
+
+.eleccion p{
+  font-size: 18px;
+  width: 240px;
+  font-family:monospace;
 }
 
 #cartas {
@@ -137,11 +200,6 @@ body{
 .show {
   display: block !important;
 }
-
-/* .formatsCards {
-  margin: 10px;
-  width: 25%;
-} */
 
 .listen img{
   width: 150px;
@@ -164,6 +222,28 @@ footer {
   padding: 10px;
   min-height: 100px;
   background-color: rgb(155, 66, 100);
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
+   color: rgb(155, 66, 100);
+  font-family: monospace;
+  background: rgba(228, 192, 219, 0.781);
+  padding: 3px;
+  margin: 0 41%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.icons{
+  text-align: center;
+  font-size: 30px;
+}
+
+.icons a{
+  justify-content: space-between;
+  margin: 0px 30px;
+  color: rgba(228, 192, 219, 0.781);
 }
 
 @media (max-width: 739.99px) {
