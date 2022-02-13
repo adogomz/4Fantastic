@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(255, 220, 207);
+  background: rgb(129, 156, 172);
   font-size: 16px;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .topnav a.icon {
-  background: rgb(155, 66, 100);
+  background: rgb(20, 57, 79);
   display: block;
   position: absolute;
   right: 20px;
@@ -39,12 +39,12 @@ body {
 }
 
 .topnav a:hover {
-  background-color: rgba(228, 192, 219, 0.781);
+  background-color: rgba(59, 131, 173, 0.781);
   color: black;
 }
 
 .active {
-  background-color: rgb(155, 66, 100);
+  background-color: rgb(20, 57, 79);
   color: white;
 }
 
@@ -218,18 +218,17 @@ margin: 2px;
 }
 
 footer {
-  border-top: 2px rgb(124, 104, 60) solid;
   padding: 10px;
   min-height: 100px;
-  background-color: rgb(155, 66, 100);
+  background-color: rgb(20, 57, 79);
 }
 
 footer p {
   text-align: center;
   font-size: 30px;
-   color: rgb(155, 66, 100);
+   color: rgb(20, 57, 79);
   font-family: monospace;
-  background: rgba(228, 192, 219, 0.781);
+  background: rgba(59, 131, 173, 0.781);
   padding: 3px;
   margin: 0 41%;
   border-radius: 10px;
@@ -243,7 +242,7 @@ footer p {
 .icons a{
   justify-content: space-between;
   margin: 0px 30px;
-  color: rgba(228, 192, 219, 0.781);
+  color: rgba(59, 131, 173, 0.781);
 }
 
 @media (max-width: 739.99px) {
