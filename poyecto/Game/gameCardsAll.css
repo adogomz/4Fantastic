@@ -93,7 +93,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px;
-  background-color: rgba(228, 192, 219, 0.781);
+  background-color: rgba(226, 224, 76, 0.781);
 }
 
 #tittleGame {
@@ -122,7 +122,7 @@ body {
 #mainLinkGames {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(228, 192, 219, 0.781);
+  background-color: rgba(226, 224, 76, 0.781);
   margin: 20px;
   text-align: center;
 }
@@ -130,14 +130,14 @@ body {
 .linkGamesCards1{
   margin: 20px;
 padding: 0px;
-background: rgb(155, 66, 100);
+background: rgb(20, 57, 79);
 border-radius: 10px;
 }
 
 .linkGamesCards2{
 margin: 20px; 
 padding: 0px;
-background: rgb(155, 66, 100);
+background: rgb(20, 57, 79);
 border-radius: 10px;
 }
 
@@ -155,13 +155,13 @@ border-radius: 10px;
 }
 
 .linkGamesCards1 h2{
-  color: rgba(228, 192, 219, 0.781);
+  color: rgba(59, 131, 173, 0.781);
 text-decoration: underline;
 margin: 2px;
 }
 
 .linkGamesCards2 h2{
-  color: rgba(228, 192, 219, 0.781);
+  color: rgba(59, 131, 173, 0.781);
 text-decoration: underline;
 margin: 2px;
 }
