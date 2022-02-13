@@ -4,12 +4,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-body {
-  background: rgb(255, 220, 207);
-  font-size: 16px;
-}
-
 /* css menú burguer */
+header{
+  background: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/Rick-and-Morty-Memes.jpg") no-repeat center/cover;
+}
 
 .topnav {
   overflow: hidden;
@@ -54,7 +52,7 @@ body {
 .headerAll {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 15px 15px;
   background: rgb(155, 66, 100);
 }
 
@@ -62,30 +60,59 @@ body {
   padding-left: 15px;
 }
 
-.imageheaderLeft {
-  height: 87.84px;
+.imageheaderLeft img{
+  width: 250px;
+  height: 100px;
   border-radius: 5px;
 }
 
 .headerRight {
   display: flex;
-  align-content: space-around;
-  margin: 20px 60px;
+  align-content: space-between;
+  margin: 10px 60px;
 }
 
 .buttonHeader {
-  background-color: rgb(219, 205, 75);
-  color: black;
-  margin: 10px;
-  padding: 5px 20px;
+  background-color: rgba(228, 192, 219, 0.781);
+  color: rgb(155, 66, 100);
+  margin: 25px;
+  width: 70px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   border-radius: 5px;
+  text-decoration: none ;
+  font-size: 20px;
 }
-
+/* main */
 #tittleHome {
   display: flex;
   justify-content: center;
-  margin: 20px;
-  background-color: rgba(228, 192, 219, 0.781);
+  margin:10px 45% 10px;
+  padding: 5px 0px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.sonTittleHome{
+  display: flex;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+
+body{
+  background-color:rgb(255, 220, 207);
+}
+
+.imgBackground{
+  
+  background: url("https://www.todofondos.net/wp-content/uploads/wood-wallpaper-wood-background-hd-134649-descargar-fondo-de-pantalla-hd.-imagen-hd-1080p-de-madera.jpg") center/cover;
+  margin:30px;
+  border-radius: 50px;
+  padding-top: 20px ;
+
 }
 
 #mainLinkGames {
@@ -97,8 +124,10 @@ body {
 #cartas {
   display: grid;
   justify-content: center;
+  text-align: center;
   grid-template-columns: repeat(4,1fr);
   padding: 30px 60px;
+  
 }
 
 .hidden {
@@ -134,7 +163,7 @@ footer {
   border-top: 2px rgb(124, 104, 60) solid;
   padding: 10px;
   min-height: 100px;
-  background-color: rgb(224, 182, 213);
+  background-color: rgb(155, 66, 100);
 }
 
 @media (max-width: 739.99px) {
