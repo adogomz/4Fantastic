@@ -89,6 +89,13 @@ body {
 }
 /* main */
 
+#tittleMainHome {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: rgba(226, 224, 76, 0.781);
+  border-radius: 20px;
+}
 
 #padreButton {
   display: flex;
@@ -130,6 +137,37 @@ body {
   border-radius: 50px;
 }
 
+#mainLinkGamesMaxPixel {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(226, 224, 76, 0.781);
+  margin: 20px;
+  text-align: center;
+  color: rgb(226, 224, 76);
+  border-radius: 20px;
+}
+
+.linkGamesCardsMaxPixel{
+  margin: 20px; 
+  padding: 0px;
+  background: rgb(20, 57, 79);
+  border-radius: 10px;
+}
+
+.linkGamesCardsMaxPixel a img{
+  margin: 0px 20px 20px 20px;
+  width: 400px;
+  height: 290px;
+}
+
+.electionMaxPixel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(20, 57, 79);
+  padding: 100px 10px;
+}
+
 #mainLinkGames {
   display: flex;
   justify-content: space-around;
@@ -142,22 +180,15 @@ body {
 
 .linkGamesCards{
   margin: 20px;
-padding: 0px;
-background: rgb(20, 57, 79);
-border-radius: 10px;
-}
-
-.linkGamesCards{
-margin: 20px; 
-padding: 0px;
-background: rgb(20, 57, 79);
-border-radius: 10px;
+  padding: 0px;
+  background: rgb(20, 57, 79);
+  border-radius: 10px;
 }
 
 .linkGamesCards a img{
   margin: 0px 20px 20px 20px;
-  width: 400px;
-  height: 290px;
+  width: 300px;
+  height: 190px;
 }
 
 .linkGamesCards p{
@@ -166,7 +197,7 @@ border-radius: 10px;
   font-size: 20px;
 }
 
-.eleccion{
+.election{
   width: 250px;
   margin-top: 100px;
   text-align: center;
@@ -178,7 +209,6 @@ border-radius: 10px;
   margin-bottom: 20px;
   font-family: monospace;
   width: 250px;
-  
 }
 
 .eleccion p{
@@ -193,16 +223,29 @@ border-radius: 10px;
   background-color: rgba(226, 224, 76, 0.781);
   margin: 20px;
   text-align: center;
-  color: rgb(20, 57, 79);
+  color: rgb(226, 224, 76);
   border-radius: 20px;
 }
 
-.eleccion{
+.linkGamesCardsMobile{
+margin: 20px; 
+padding: 0px;
+background: rgb(20, 57, 79);
+border-radius: 10px;
+}
+
+.linkGamesCardsMobile a img{
+  margin: 0px 20px 20px 20px;
+  width: 400px;
+  height: 290px;
+}
+
+.electionMobile{
   display: flex;
-  justify-content: center;
-  width: 250px;
-  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
   color: rgb(20, 57, 79);
+  padding: 50px 80px 20px 80px;
 }
 
 #cartas {
@@ -244,7 +287,7 @@ footer {
   background-color: rgb(20, 57, 79);
 }
 
-footer p {
+.parrafFooterDesktop {
   text-align: center;
   font-size: 30px;
    color: rgb(20, 57, 79);
@@ -255,6 +298,18 @@ footer p {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+.parrafFooterMobile {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(20, 57, 79);
+  background: rgba(59, 131, 173, 0.781);
+  padding: 3px;
+  margin: 0 41%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .icons{
   text-align: center;
   font-size: 30px;
@@ -310,8 +365,7 @@ html {
 }
 
 /* ^^^^^ Baraja a la mesa ^^^^^^ */
-
-@media (max-width: 739.99px) {
+@media (max-width: 919.99px) {
 
   .imageCardsAPI img{
     width: 100px;
@@ -328,12 +382,44 @@ html {
   #mainLinkGames{
     display: none;
   }
+
+  .parrafFooterDesktop {
+    display: none;
+  }
+
+  #mainLinkGamesMaxPixel{
+    display: none;
+  }
+
 }
 
-@media (min-width: 740px) {
+@media (min-width: 920px) and (max-width: 1145.99px) {
   #mainLinkGamesMobile{
     display: none;
   }
+
+  .parrafFooterMobile {
+    display: none;
+  }
+
+  #mainLinkGamesMaxPixel{
+    display: none;
+  }
+}
+
+@media (min-width: 1146px) {
+  #mainLinkGamesMobile{
+    display: none;
+  }
+
+  .parrafFooterMobile {
+    display: none;
+  }
+
+  #mainLinkGames{
+    display: none;
+  }
+
 }
 
 
