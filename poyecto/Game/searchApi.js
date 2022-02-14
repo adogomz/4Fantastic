@@ -7,6 +7,8 @@ let numRandom = [];
 let second=false;
 let clickedId;
 let canClick=true;
+let cartas_giradas = 0;
+let clicks = 0;
 
 /* REVISA ESTO luego
   classList.toggle
@@ -23,10 +25,12 @@ function hideImage(){
 function toggleImage(id){
   document.getElementById(id).classList.toggle('hidden');
   document.getElementById(id+'-img').classList.toggle('show');
+  debugger
 }
 
 //funcion para sacar el click
 function addImageCard() {
+  
   if(!canClick)
     return;
 
@@ -35,6 +39,9 @@ function addImageCard() {
   if(second) {
     // clickedId
     // this.id
+    // para contar los cliks
+    clicks++;
+  
     if(
       document.getElementById(this.id).dataset.characterId
       !=
@@ -48,12 +55,21 @@ function addImageCard() {
         canClick=true;
       },1500)
     }
+    else{
+      cartas_giradas+=2;
+      if(cartas_giradas==16){
+        setTimeout(()=>{ window.alert("Enhorabuna lo hisciste en " + clicks + " cliks");
+      },200)
+      }
+    } 
   }
 
   second =!second;
   clickedId=this.id;
 
 }
+
+
 
 //sacada de internet la siguiente funcion. Sirve para sacar que no se repitan los numeros random
 function getRandomNumber(min, max) {
@@ -114,5 +130,4 @@ fetch(API_PERS)
     element.addEventListener('click', addImageCard);
   });
 
-  
 });
