@@ -1,4 +1,3 @@
-/* CONSTANTE PARA LA API SOLO SACA 10 PERSONAJES CREO QUE ERAN */
 const API_PERS = "https://rickandmortyapi.com/api/character/";
 let cardsList;
 let keyCardsList;
@@ -10,14 +9,6 @@ let canClick=true;
 let cartas_giradas = 0;
 let clicks = 0;
 
-/* REVISA ESTO luego
-  classList.toggle
-  HTML dataset
-  setTimeout
-  Chrome devTools breakpoints
-  Pasar por valor o por referencia
-*/
-
 function hideImage(){
 
 }
@@ -28,7 +19,7 @@ function toggleImage(id){
   debugger
 }
 
-//funcion para sacar el click
+//function click
 function addImageCard() {
   
   if(!canClick)
@@ -37,9 +28,7 @@ function addImageCard() {
   toggleImage(this.id);
 
   if(second) {
-    // clickedId
-    // this.id
-    // para contar los cliks
+
     clicks++;
   
     if(
@@ -69,9 +58,6 @@ function addImageCard() {
 
 }
 
-
-
-//sacada de internet la siguiente funcion. Sirve para sacar que no se repitan los numeros random
 function getRandomNumber(min, max) {
   let totalEle = max - min + 1;
   let result = Math.floor(Math.random() * totalEle) + min;
@@ -87,7 +73,6 @@ function createArrayOfNumber(start, end) {
 }
 
 let numbersArray = createArrayOfNumber(0, 19);
-//hasta aqui
 
 fetch(API_PERS)
 .then(function respuesta(res) {
@@ -123,7 +108,6 @@ fetch(API_PERS)
 
   });
 
-  //para el click
   let elements = document.getElementsByClassName("listen");
 
   Array.from(elements).forEach(function(element) {
